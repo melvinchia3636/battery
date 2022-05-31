@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.charge {
+  animation: charge 3s linear forwards;
+}
+
+@keyframes charge {
+  0% {
+    @apply max-w-0 bg-red-500;
+  }
+  50% {
+    @apply bg-amber-500
+  }
+  100% {
+    @apply max-w-full bg-green-500
+  }
+}
